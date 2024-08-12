@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Pacifico&family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+  
+    <div class="header">
+        <h1>Aprende Git y GitHub</h1>
+        <img src="image/git.png" alt="">
+        <img src="image/github.png" alt="">
+        <p>Git es la herramienta que gestiona el control de versiones del código fuente a nivel local y distribuido. GitHub es una plataforma en línea que utiliza Git para proporcionar funcionalidades adicionales de colaboración, gestión de proyectos y automatización.</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#subir">¿Cómo subir un proyecto?</a></li>
+            <li><a href="#clonar">¿Cómo clonar un repositorio?</a></li>
+        </ul>
+    </nav>
+
+
+        <div class="comandos">
+            <h1>Pasos para subir un proyecto a GitHub</h1>
+            <p><strong>1. Inicializa un repositorio local:</strong> En tu terminal, navega al directorio de tu proyecto y ejecuta `git init` para inicializar un nuevo repositorio de Git.</p>
+            <p><strong>2. Añade archivos al repositorio:</strong> Usa `git add .` para agregar todos los archivos del directorio al área de preparación. Puedes especificar archivos individuales si lo prefieres.</p>
+            <p><strong>3. Realiza un commit:</strong> Ejecuta `git commit -m "Mensaje de commit"` para guardar tus cambios en el repositorio local con un mensaje descriptivo.</p>
+            <p><strong>4. Conecta tu repositorio local a GitHub:</strong> Usa `git remote add origin <URL_DEL_REPOSITORIO>` para añadir el repositorio remoto de GitHub. Reemplaza `<URL_DEL_REPOSITORIO>` con la URL de tu repositorio en GitHub.</p>
+            <p><strong>5. Sube tus cambios a GitHub:</strong> Finalmente, ejecuta `git push -u origin master` para subir los cambios a tu repositorio en GitHub. Puedes necesitar ingresar tus credenciales de GitHub.</p>
+        </div>
+    </div>
+
+    <div id="clonar" class="clonacion">
+        <h1>¿Cómo clonar un repositorio en Git?</h1>
+        <p><strong>1. Obtén la URL del repositorio:</strong> Ve al repositorio en GitHub y copia la URL del repositorio (generalmente terminando en `.git`).</p>
+        <p><strong>2. Clona el repositorio:</strong> En tu terminal, navega al directorio donde quieres clonar el repositorio y ejecuta `git clone <URL_DEL_REPOSITORIO>`. Esto creará una copia del repositorio en tu máquina local.</p>
+        <p><strong>3. Navega al directorio del repositorio:</strong> Usa `cd <NOMBRE_DEL_REPOSITORIO>` para moverte al directorio recién creado que contiene el repositorio clonado.</p>
+        <p><strong>4. Verifica los cambios:</strong> Puedes usar comandos como `git status` y `git log` para verificar el estado del repositorio y los commits.</p>
+        <p><strong>5. Configura el repositorio:</strong> Si necesitas hacer cambios, configura tu repositorio con tus credenciales y ajustes necesarios.</p>
+        <p><strong>6. Actualiza el repositorio:</strong> Usa `git pull` para obtener las últimas actualizaciones del repositorio remoto y mantener tu copia local sincronizada.</p>
+    </div>
+</body>
+</html>
+</body>
+</html>
